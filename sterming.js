@@ -53,7 +53,7 @@ if (message.content.startsWith(adminprefix + 'setstreem')) {
 client.on('message',function(message) {
     let args = message.content.split(" ").slice(1).join(" ");
    if(message.content.startsWith(adminprefix + "setWatch")) {
-       if(message.author.id !== '489342754887827487') return;
+       if(message.author.id !== '473627357014392842') return;
        client.user.setActivity(args,{type: 'WATCHING'});
        message.channel.send("**- :white_check_mark: Done!,**");
    } 
