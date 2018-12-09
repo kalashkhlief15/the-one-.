@@ -28,8 +28,8 @@ client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
   console.log('')
 });
 
-const adminprefix = "TM";
-const devs = ['251663317570027520'];
+const adminprefix = "t";
+const devs = ['473627357014392842'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -61,7 +61,7 @@ client.on('message',function(message) {
 client.on('message',function(message) {
     let args = message.content.split(" ").slice(1).join(" ");
    if(message.content.startsWith(adminprefix + "setListen")) {
-       if(message.author.id !== '251663317570027520') return;
+       if(message.author.id !== '473627357014392842') return;
        client.user.setActivity(args,{type: 'LISTENING'});
        message.channel.send("**- :white_check_mark: Done!,**");
    } 
